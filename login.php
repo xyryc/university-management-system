@@ -19,7 +19,7 @@
 		if(isset($_POST['admin_login'])){
 			header("Location: admin_login.php");
 		}
-		//cheaking ig student_login button was pressed
+		//cheaking if student_login button was pressed
 		if(isset($_POST['student_login'])){
 			header("Location: student_login.php");
 		}
