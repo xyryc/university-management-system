@@ -2,17 +2,24 @@
 <html>
 <head>
 	<title>Admin Login</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<center><br><br>
-		<h3>Admin LogIn Page</h3><br>
-		<form action="" method="post">
-			Email ID: <input type="text" name="email" required><br><br>
-			Password: <input type="password" name="password" required><br><br>
-			<input type="submit" name="submit" value="LogIn">
-		</form><br>
+	<div class="login-box">
+  <h1>Admin Login</h1>
+  <form action="" method="post">
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" name="email" placeholder="Email" required>
+  </div>
 
-		
-	</center>
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password" required>
+  </div>
+
+  <input type="submit" name="submit" class="btn" value="Log In">
+  </form>
+</div>
 </body>
 </html>

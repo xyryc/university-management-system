@@ -2,15 +2,17 @@
 <html>
 <head>
 	<title>Login Page</title>
-
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<center><br><br>
-	<h3>Student Management System</h3><br>
+	<center>
+	<div class="login-box-homepage">
+	<h1>Student Management System</h1>
 	<form action="" method="POST">
-		<input type="submit" name="admin_login" value="Admin Login" required>
-		<input type="submit" name="student_login" value="Student Login" required>
+		<input type="submit" name="admin_login" class="btn" value="Admin Login" required>
+		<input type="submit" name="student_login" class="btn" value="Student Login" required>
 	</form>
+	</div>
 
 	<?php
 		//cheaking if admin_login button was pressed
