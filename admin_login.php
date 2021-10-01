@@ -3,6 +3,7 @@
 <head>
 	<title>Admin Login</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/icon.jpg">
 </head>
 <body>
 	<div class="login-box">
@@ -21,5 +22,11 @@
   <input type="submit" name="submit" class="btn" value="Log In">
   </form>
 </div>
+<?php>
+    if(isset($_POST['submit'])){
+        $connection = mysqli_connect("localhost", "root", "");
+        $db = mysqli_select_db($connection, "")
+    }
+
 </body>
 </html>

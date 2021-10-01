@@ -3,6 +3,7 @@
 <head>
 	<title>Student Login</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/icon.jpg">
 </head>
 <body>
 	<div class="login-box">
