@@ -8,7 +8,7 @@
 <body>
 	<center>
 	<div class="login-box-homepage">
-	<h1>Student Management System</h1>
+	<h1>University Management System</h1>
 	<form action="" method="POST">
 		<input type="submit" name="admin_login" class="btn" value="Admin Login" required>
 		<input type="submit" name="student_login" class="btn" value="Student Login" required>
