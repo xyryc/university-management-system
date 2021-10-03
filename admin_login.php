@@ -31,7 +31,7 @@
         while($row = mysqli_fetch_assoc($query_run)){
             if($row['email'] == $_POST['email']){
                 if($row['password'] == $_POST['password']){
-                    echo "Log In Successful";
+                    header("Location: admin_dashboard.php");
                 }
                 else{
                     echo "Wrong Password";
@@ -43,6 +43,7 @@
         }
     }
 ?>
+
     </div>
 
 </body>

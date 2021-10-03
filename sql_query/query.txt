@@ -1,4 +1,4 @@
-login table query:
+#login table query:
 
 CREATE table login(
     idx int NOT NULL PRIMARY KEY,
@@ -8,7 +8,28 @@ CREATE table login(
     );
 
 INSERT INTO login(idx, name, email, password)
-VALUES(1, 'admin', 'admin', 'admin');
+VALUES(0, 'admin', 'admin', 'admin');
+
+
+#student table query:
+
+CREATE table student(
+    idx int NOT NULL PRIMARY KEY,
+    id int,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255)
+    );
+
+    INSERT INTO student(idx, id, name, email, password)
+VALUES(0, 200101111, 'tamanna', 'tamanna@gmail.com', 'tamanna1234'),
+(1, 200101066, 'soumya', 'soumya@gmail.com', 'soumya1234'),
+(2, 200101076, 'anik', 'anik@gmail.com', 'anik1234');
+
+
+
+
+
 
 
 
