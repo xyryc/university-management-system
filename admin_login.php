@@ -16,17 +16,34 @@
 
   <div class="textbox">
     <i class="fas fa-lock"></i>
-    <input type="password" placeholder="Password" required>
+    <input type="password" name="password" placeholder="Password" required>
   </div>
 
   <input type="submit" name="submit" class="btn" value="Log In">
   </form>
-</div>
-<?php>
+
+<?php
     if(isset($_POST['submit'])){
         $connection = mysqli_connect("localhost", "root", "");
-        $db = mysqli_select_db($connection, "")
+        $db = mysqli_select_db($connection, "sdponedb");
+        $query = "select * from login where email = '$_POST[email]'";
+        $query_run = mysqli_query($connection, $query);
+        while($row = mysqli_fetch_assoc($query_run)){
+            if($row['email'] == $_POST['email']){
+                if($row['password'] == $_POST['password']){
+                    echo "Log In Successful";
+                }
+                else{
+                    echo "Wrong Password";
+                }
+            }
+            else{
+                echo "Email doesn't match";
+            }
+        }
     }
+?>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,14 @@
+login table query:
+
+CREATE table login(
+    idx int NOT NULL PRIMARY KEY,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255)
+    );
+
+INSERT INTO login(idx, name, email, password)
+VALUES(1, 'admin', 'admin', 'admin');
+
+
+
