@@ -68,3 +68,17 @@ body{
     cursor: pointer;
     margin: 12px 0;
 }
+
+.header {
+  height: 10%;
+  width: 100%;
+  top: 2%;
+  background-color: transparent;
+  position: fixed;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  }
+
+  .

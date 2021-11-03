@@ -1,3 +1,6 @@
+#create database
+CREATE DATABASE sdponedb;
+
 #login table query:
 
 CREATE table login(
