@@ -81,4 +81,23 @@ body{
   font-size: 40px;
   }
 
-  .
+  .left_side{
+    height: 75%;
+    width: 15%;
+    top: 20%;
+    background-color: transparent;
+    position: fixed;
+    color: white;
+    font-size: 40px;
+  }
+
+  .right_side{
+    height: 75%;
+    width: 80%;
+    background-color: whitesmoke;
+    position: fixed;
+    left: 17%;
+    top: 21%;
+    color: red;
+    border: solid 1px black;
+  }
