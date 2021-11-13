@@ -12,37 +12,37 @@
 
 <body>
 	<div>
-      <div class="header">Admin Dashboard</div>
-      <div class="right_size">
-      Email: <?php echo $_SESSION['email']; ?> &nbsp&nbsp
-      Name: <?php echo $_SESSION['name']; ?> 
-      <a href="logout.php">Logout</a>
-      </div
+      <div class="header">Admin Dashboard</div><br><br><br><br><br><br>
+        <div class="login_status">
+          Email: <?php echo $_SESSION['email']; ?> &nbsp&nbsp
+          Name: <?php echo $_SESSION['name']; ?> 
+          <a href="logout.php">Logout</a>
+        </div>
 </div>
 
 <br><br>
 
-<div class="left_side">
+<div>
   <form action="" method="post">
     <table>
       <tr>
         <td>
-          <input type="submit" name="search_student" value="Search Student">
+          <input class="btn" type="submit" name="search_student" value="Search Student">
         </td>
       </tr>
       <tr>
         <td>
-          <input type="submit" name="edit_student" value="Edit Student">
+          <input class="btn" type="submit" name="edit_student" value="Edit Student">
         </td>
       </tr>
       <tr>
         <td>
-          <input type="submit" name="add_new_student" value="Add New Student">  
+          <input class="btn" type="submit" name="add_new_student" value="Add New Student">  
         </td>
       </tr>
       <tr>
         <td>
-          <input type="submit" name="delete_student" value="Delete Student">  
+          <input class="btn" type="submit" name="delete_student" value="Delete Student">  
         </td>
       </tr>
     </table>

@@ -101,3 +101,9 @@ body{
     color: red;
     border: solid 1px black;
   }
+
+  .login_status{
+    color: white;
+    background-color: transparent;
+    border: white;
+  }
