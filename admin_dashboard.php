@@ -11,11 +11,13 @@
 ?>
 
 <body>
-	<div class="header">
-    <center><strong>Admin Dashboard &nbsp&nbsp&nbsp&nbsp</strong><br>Email: <?php echo $_SESSION['email']; ?> &nbsp&nbsp
+	<div>
+      <div class="header">Admin Dashboard</div>
+      <div class="right_size">
+      Email: <?php echo $_SESSION['email']; ?> &nbsp&nbsp
       Name: <?php echo $_SESSION['name']; ?> 
       <a href="logout.php">Logout</a>
-    </center>
+      </div
 </div>
 
 <br><br>
