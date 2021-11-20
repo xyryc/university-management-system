@@ -14,11 +14,11 @@
 	<div>
       <div class="header">Admin Dashboard</div><br><br><br><br><br><br>
         <div class="login_status">
-          Email: <?php echo $_SESSION['email']; ?> &nbsp&nbsp
-          Name: <?php echo $_SESSION['name']; ?> 
-          <a href="logout.php">Logout</a>
+            Email: <?php echo $_SESSION['email']; ?> &nbsp&nbsp
+            Name: <?php echo $_SESSION['name']; ?> &nbsp&nbsp
+            <a href="logout.php">Logout</a>
         </div>
-</div>
+  </div>
 
 <br><br>
 
@@ -47,6 +47,24 @@
       </tr>
     </table>
   </form>
+</div>
+
+<div class="right_side"><br><br>
+  <div id="demo">
+    <?php
+      if(isset($_POST['search_student'])){
+        ?>
+          <center>
+              <form action="" method="post">
+                Enter Roll Number: 
+                <input type="text" name="roll">
+                <input type="submit" name="search_student_using_roll_for_search" value="Search">
+              </form>
+          </center> 
+          <?php
+      }
+      ?>
+    </div>
 </div>
 
 

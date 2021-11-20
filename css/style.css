@@ -69,26 +69,29 @@ body{
     margin: 12px 0;
 }
 
-.header {
-  height: 10%;
-  width: 100%;
-  top: 2%;
-  background-color: transparent;
-  position: fixed;
+
+.login_status{
   color: white;
-  padding: 10px;
-  text-align: center;
-  font-size: 40px;
-  }
+  border: white;
+}
+
+  .header {
+    height: 10%;
+    width: 100%;
+    top: 2%;
+    background-color: transparent;
+    position: fixed;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    }
 
   .left_side{
     height: 75%;
     width: 15%;
-    top: 20%;
-    background-color: transparent;
+    top: 10%;
     position: fixed;
-    color: white;
-    font-size: 40px;
   }
 
   .right_side{
@@ -98,11 +101,6 @@ body{
     position: fixed;
     left: 17%;
     top: 21%;
-    color: red;
+    color: black;
     border: solid 1px black;
-  }
-
-  .login_status{
-    color: white;
-    border: white;
   }
