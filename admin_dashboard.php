@@ -8,6 +8,8 @@
 
 <?php
   session_start();
+  $connection = mysqli_connect("localhost", "root", "");
+  $db = mysqli_select_db($connection, "sdponedb");
 ?>
 
 <body>
@@ -56,13 +58,21 @@
         ?>
           <center>
               <form action="" method="post">
-                Enter Roll Number: 
-                <input type="text" name="roll">
-                <input type="submit" name="search_student_using_roll_for_search" value="Search">
+                Enter ID Number: 
+                <input type="text" name="id">
+                <input type="submit" name="search_student_using_id_for_search" value="Search">
               </form>
           </center> 
           <?php
       }
+
+      if(isset($_POST['search_student_using_id_for_search'])){
+        $query = "select * from student where id = '$_POST[id]'";
+        $query_run = mysqli_query($connection, $query);
+
+      }
+
+
       ?>
     </div>
 </div>
