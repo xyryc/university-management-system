@@ -69,7 +69,55 @@
       if(isset($_POST['search_student_using_id_for_search'])){
         $query = "select * from student where id = '$_POST[id]'";
         $query_run = mysqli_query($connection, $query);
+        while($row = mysqli_fetch_assoc($query_run)){
+          ?>
+          <table>
 
+            <tr>
+              <td><b>ID Number: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Name: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['name']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>ID Number: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>ID Number: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>ID Number: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>ID Number: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+              </td>
+            </tr>
+
+          </table>
+          <?php
+        }
       }
 
 

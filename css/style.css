@@ -75,7 +75,7 @@ body{
   border: white;
 }
 
-  .header {
+.header {
     height: 10%;
     width: 100%;
     top: 2%;
@@ -85,16 +85,16 @@ body{
     padding: 10px;
     text-align: center;
     font-size: 40px;
-    }
+}
 
-  .left_side{
+.left_side{
     height: 75%;
     width: 15%;
     top: 10%;
     position: fixed;
-  }
+}
 
-  .right_side{
+.right_side{
     height: 75%;
     width: 80%;
     background-color: whitesmoke;
@@ -103,4 +103,4 @@ body{
     top: 21%;
     color: black;
     border: solid 1px black;
-  }
+}
