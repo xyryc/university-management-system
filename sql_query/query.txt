@@ -24,10 +24,22 @@ CREATE table student(
     password varchar(255)
     );
 
-    INSERT INTO student(idx, id, name, email, password)
+INSERT INTO student(idx, id, name, email, password)
 VALUES(0, 200101111, 'tamanna', 'tamanna@gmail.com', 'tamanna1234'),
 (1, 200101066, 'soumya', 'soumya@gmail.com', 'soumya1234'),
 (2, 200101076, 'anik', 'anik@gmail.com', 'anik1234');
+
+ALTER TABLE student
+ADD address varchar(255),
+ADD contact_no int,
+ADD level_term_info varchar(255),
+ADD cgpa varchar(255)
+
+UPDATE student
+SET address='Dinajpur', contact_no=01938908722, level_term_info='L-2 T-II', cgpa='3.45'
+WHERE id = 200101076;
+
+
 
 
 

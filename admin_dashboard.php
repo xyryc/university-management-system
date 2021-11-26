@@ -88,30 +88,30 @@
             </tr>
 
             <tr>
-              <td><b>ID Number: </b><td>
+              <td><b>Address: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+                <input type="text" value="<?php echo $row['address']; ?>" disabled>
               </td>
             </tr>
 
             <tr>
-              <td><b>ID Number: </b><td>
+              <td><b>Contact No.: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+                <input type="text" value="<?php echo $row['contact_no']; ?>" disabled>
               </td>
             </tr>
 
             <tr>
-              <td><b>ID Number: </b><td>
+              <td><b>Level & Term: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+                <input type="text" value="<?php echo $row['level_term_info']; ?>" disabled>
               </td>
             </tr>
 
             <tr>
-              <td><b>ID Number: </b><td>
+              <td><b>CGPA: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+                <input type="text" value="<?php echo $row['cgpa']; ?>" disabled>
               </td>
             </tr>
 
@@ -120,8 +120,71 @@
         }
       }
 
-
       ?>
+      <?php
+      if(isset($_POST['search_student'])){
+        ?>
+          <center>
+              <form action="" method="post">
+                Enter ID Number: 
+                <input type="text" name="id">
+                <input type="submit" name="search_student_using_id_for_edit" value="Search">
+              </form>
+          </center> 
+          <?php
+        }
+        if(isset($_POST['search_student_using_id_for_edit'])){
+        $query = "select * from student where id = '$_POST[id]'";
+        $query_run = mysqli_query($connection, $query);
+        while($row = mysqli_fetch_assoc($query_run)){
+          ?>
+          <table>
+
+            <tr>
+              <td><b>ID Number: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Name: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['name']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Address: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['address']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Contact No.: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['contact_no']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Level & Term: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['level_term_info']; ?>" disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>CGPA: </b><td>
+              <td>
+                <input type="text" value="<?php echo $row['cgpa']; ?>" disabled>
+              </td>
+            </tr>
+
+          </table>
+          <?php
+
     </div>
 </div>
 
