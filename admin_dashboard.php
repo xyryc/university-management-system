@@ -121,8 +121,9 @@
       }
 
       ?>
+      
       <?php
-      if(isset($_POST['search_student'])){
+      if(isset($_POST['edit_student'])){
         ?>
           <center>
               <form action="" method="post">
@@ -184,7 +185,9 @@
 
           </table>
           <?php
-
+        }
+      }
+          ?>
     </div>
 </div>
 
