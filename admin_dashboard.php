@@ -95,7 +95,7 @@
             </tr>
 
             <tr>
-              <td><b>Contact No.: </b><td>
+              <td><b>Contact No. : </b><td>
               <td>
                 <input type="text" value="<?php echo $row['contact_no']; ?>" disabled>
               </td>
@@ -144,43 +144,48 @@
             <tr>
               <td><b>ID Number: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['id']; ?>" disabled>
+                <input type="text" value="<?php echo $row['id']; ?>">
               </td>
             </tr>
 
             <tr>
               <td><b>Name: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['name']; ?>" disabled>
+                <input type="text" value="<?php echo $row['name']; ?>">
               </td>
             </tr>
 
             <tr>
               <td><b>Address: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['address']; ?>" disabled>
+                <input type="text" value="<?php echo $row['address']; ?>">
               </td>
             </tr>
 
             <tr>
-              <td><b>Contact No.: </b><td>
+              <td><b>Contact No. : </b><td>
               <td>
-                <input type="text" value="<?php echo $row['contact_no']; ?>" disabled>
+                <input type="text" value="<?php echo $row['contact_no']; ?>">
               </td>
             </tr>
 
             <tr>
               <td><b>Level & Term: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['level_term_info']; ?>" disabled>
+                <input type="text" value="<?php echo $row['level_term_info']; ?>">
               </td>
             </tr>
 
             <tr>
               <td><b>CGPA: </b><td>
               <td>
-                <input type="text" value="<?php echo $row['cgpa']; ?>" disabled>
+                <input type="text" value="<?php echo $row['cgpa']; ?>">
               </td>
+            </tr><br>
+
+            <tr>
+              <td></td>
+              <td><input type="submit" name="edit" value="Update"></td>
             </tr>
 
           </table>
