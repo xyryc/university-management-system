@@ -205,11 +205,23 @@ $db = mysqli_select_db($connection, "sdponedb");
 
             </table>
           </form>
-
       <?php
         }
       }
       ?>
+
+      <?php
+        if(isset($_POST['add_new_student'])){
+          ?>
+          <center><h4>Fill up the given details</h4></center>
+          <form action="add_new_student.php" method="post">
+            <table>
+              <tr>
+                <td>Id: </td> 
+              </tr>
+          </form>
+        }
+
     </div>
   </div>
 
