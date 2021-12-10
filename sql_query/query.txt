@@ -39,6 +39,7 @@ UPDATE student
 SET address='Dinajpur', contact_no=01938908722, level_term_info='L-2 T-II', cgpa='3.45'
 WHERE id = 200101076;
 
+ALTER table student AUTO_INCREMENT = 1;
 
 
 

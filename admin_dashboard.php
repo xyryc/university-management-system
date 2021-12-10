@@ -30,22 +30,22 @@ $db = mysqli_select_db($connection, "sdponedb");
       <table>
         <tr>
           <td>
-            <input class="btn" type="submit" name="search_student" value="Search Student">
+            <input class="btn" type="submit" name="search_data" value="Search Data">
           </td>
         </tr>
         <tr>
           <td>
-            <input class="btn" type="submit" name="update_student" value="Update Student">
+            <input class="btn" type="submit" name="update_data" value="Update Data">
           </td>
         </tr>
         <tr>
           <td>
-            <input class="btn" type="submit" name="add_new_student" value="Add New Student">
+            <input class="btn" type="submit" name="add_data" value="Add Data">
           </td>
         </tr>
         <tr>
           <td>
-            <input class="btn" type="submit" name="delete_student" value="Delete Student">
+            <input class="btn" type="submit" name="delete_data" value="Delete Data">
           </td>
         </tr>
       </table>
@@ -55,19 +55,19 @@ $db = mysqli_select_db($connection, "sdponedb");
   <div class="right_side"><br><br>
     <div id="demo">
       <?php
-      if (isset($_POST['search_student'])) {
+      if (isset($_POST['search_data'])) {
       ?>
         <center>
           <form action="" method="post">
             Enter ID Number:
             <input type="text" name="id">
-            <input type="submit" name="search_student_using_id_for_search" value="Search">
+            <input type="submit" name="search_data_using_id_for_search" value="Search">
           </form>
         </center>
         <?php
       }
 
-      if (isset($_POST['search_student_using_id_for_search'])) {
+      if (isset($_POST['search_data_using_id_for_search'])) {
         $query = "select * from student where id = '$_POST[id]'";
         $query_run = mysqli_query($connection, $query);
         while ($row = mysqli_fetch_assoc($query_run)) {
@@ -124,24 +124,24 @@ $db = mysqli_select_db($connection, "sdponedb");
       ?>
 
       <?php
-      if (isset($_POST['update_student'])) {
+      if (isset($_POST['update_data'])) {
       ?>
         <center>
           <form action="" method="post">
             Enter ID Number:
             <input type="text" name="id">
-            <input type="submit" name="search_student_using_id_for_update" value="Search">
+            <input type="submit" name="search_data_using_id_for_update" value="Search">
           </form>
         </center>
         <?php
       }
-      if (isset($_POST['search_student_using_id_for_update'])) {
+      if (isset($_POST['search_data_using_id_for_update'])) {
         $query = "select * from student where id = '$_POST[id]'";
         $query_run = mysqli_query($connection, $query);
         while ($row = mysqli_fetch_assoc($query_run)) {
         ?>
 
-          <form action="admin_update_student.php" method="post">
+          <form action="admin_update_data.php" method="post">
             <table>
 
               <tr>
@@ -199,13 +199,13 @@ $db = mysqli_select_db($connection, "sdponedb");
       ?>
 
       <?php
-      if (isset($_POST['add_new_student'])) {
+      if (isset($_POST['add_data'])) {
       ?>
         <center>
           <h4>Fill up the given details</h4>
         </center>
 
-        <form action="add_new_student.php" method="post">
+        <form action="admin_add_data.php" method="post">
 
           <table>
             <tr>
@@ -250,7 +250,7 @@ $db = mysqli_select_db($connection, "sdponedb");
             </tr>
             <tr>
               <td></td>
-              <td><input type="submit" name="add_student_details" value="Add Student">
+              <td><input type="submit" name="add_data" value="Add Data">
               </td>
             </tr>
           </table>
