@@ -30,7 +30,7 @@ $db = mysqli_select_db($connection, "sdponedb");
       <table>
         <tr>
           <td>
-            <input class="btn" type="submit" name="update_data" value="Edit Data">
+            <input class="btn" type="submit" name="update_data" value="Update Data">
           </td>
         </tr>
         <tr>
@@ -58,7 +58,7 @@ $db = mysqli_select_db($connection, "sdponedb");
                 ID:
               </td>
               <td>
-                <input type="text" value="<?php echo $row['id'] ?>">
+                <input type="text" name="id" value="<?php echo $row['id'] ?>">
               </td>
             </tr>
             <tr>
@@ -66,7 +66,7 @@ $db = mysqli_select_db($connection, "sdponedb");
                 Name:
               </td>
               <td>
-                <input type="text" value="<?php echo $row['name'] ?>">
+                <input type="text" name="name" value="<?php echo $row['name'] ?>">
               </td>
             </tr>
             <tr>
@@ -74,7 +74,7 @@ $db = mysqli_select_db($connection, "sdponedb");
                 Email:
               </td>
               <td>
-                <input type="text" value="<?php echo $row['email'] ?>">
+                <input type="text" name="email" value="<?php echo $row['email'] ?>">
               </td>
             </tr>
             <tr>
@@ -82,7 +82,7 @@ $db = mysqli_select_db($connection, "sdponedb");
                 Password:
               </td>
               <td>
-                <input type="text" value="<?php echo $row['password'] ?>">
+                <input type="text" name="password" value="<?php echo $row['password'] ?>">
               </td>
             </tr>
             <tr>
@@ -90,7 +90,7 @@ $db = mysqli_select_db($connection, "sdponedb");
                 Address:
               </td>
               <td>
-                <input type="text" value="<?php echo $row['address'] ?>">
+                <input type="text" name="address" value="<?php echo $row['address'] ?>">
               </td>
             </tr>
             <tr>
@@ -98,7 +98,7 @@ $db = mysqli_select_db($connection, "sdponedb");
                 Contact NO. :
               </td>
               <td>
-                <input type="text" value="<?php echo $row['contact_no'] ?>">
+                <input type="text" name="contact_no" value="<?php echo $row['contact_no'] ?>">
               </td>
             </tr>
             <tr>
@@ -106,7 +106,7 @@ $db = mysqli_select_db($connection, "sdponedb");
                 Level & Term:
               </td>
               <td>
-                <input type="text" value="<?php echo $row['level_term_info'] ?>">
+                <input type="text" name="level_term_info" value="<?php echo $row['level_term_info'] ?>">
               </td>
             </tr>
             <tr>
@@ -114,7 +114,7 @@ $db = mysqli_select_db($connection, "sdponedb");
                 CGPA:
               </td>
               <td>
-                <input type="text" value="<?php echo $row['cgpa'] ?>">
+                <input type="text" name="cgpa" value="<?php echo $row['cgpa'] ?>">
               </td>
             </tr>
             <tr>
