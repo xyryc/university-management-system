@@ -202,14 +202,14 @@ $db = mysqli_select_db($connection, "sdponedb");
       if (isset($_POST['add_data'])) {
       ?>
         <center>
-          <h4>Fill up the given details</h4>
+          <h4>Fill Up The Blank Fields</h4>
         </center>
 
         <form action="admin_add_data.php" method="post">
 
           <table>
             <tr>
-              <td>Id: </td>
+              <td>ID: </td>
               <td>
                 <input type="text" name="id" required>
             </tr>
@@ -256,8 +256,22 @@ $db = mysqli_select_db($connection, "sdponedb");
           </table>
 
         </form>
-      <?php
+        <?php
       }
+      ?>
+
+      <?php 
+        if(isset($_POST['delete_data'])){
+          ?>
+          <center>
+            <form action="admin_delete_data.php" method="POST">
+              Enter ID Number: 
+              <input type="text" name="id">
+              <input type="submit" name="search_data_using_id_for_delete" value="Delete">
+            </form>
+          </center>
+          <?php
+        }
       ?>
 
     </div>

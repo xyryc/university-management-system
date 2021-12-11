@@ -7,6 +7,6 @@
     $query_run = mysqli_query($connection, $query);
 ?>
 <script type="text/javascript">
-    alert("Informations have been Added to Database Successfully!");
+    alert("Informations  Added to Database Successfully!");
     window.location.href = "admin_dashboard.php";
 </script>
